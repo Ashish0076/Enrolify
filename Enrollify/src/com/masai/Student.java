@@ -136,10 +136,10 @@ public class Student {
         System.out.println("Available Batches:");
         for (Course course : courses) {
             System.out.println(course.getName() + ":");
-            List<Batch> batches = course.getBatches();
-            for (Batch batch : batches) {
-                System.out.println("Batch " + batch);
-            }
+            //List<Batch> batches = course.getBatches();
+           // for (Batch batch : batches) {
+               // System.out.println("Batch " + batch);
+            //}
         }
     }
 
