@@ -18,7 +18,11 @@ public class Batch {
 
 	    // getters and setters
 
-	    public String getBatchName() {
+	    public Batch(Course courseToAddBatch, String batchName2) {
+			// TODO Auto-generated constructor stub
+		}
+
+		public String getBatchName() {
 			return batchName;
 		}
 
@@ -65,6 +69,11 @@ public class Batch {
 	    public void increaseAvailableSeats(int count) {
 	        availableSeats += count;
 	    }
+
+		public Object getName() {
+			// TODO Auto-generated method stub
+			return null;
+		}
 
 	    // other methods
 }

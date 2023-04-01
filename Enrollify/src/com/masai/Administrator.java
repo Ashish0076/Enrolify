@@ -3,13 +3,13 @@ import java.util.*;
 
 public class Administrator {
 	 // List to store all courses
-    private List<Course> courses;
+    private static List<Course> courses;
     
     // List to store all batches
-    private List<Batch> batches;
+    private static  List<Batch> batches;
     
     // List to store all students
-    private List<Student> students;
+    private static List<Student> students;
     
     public Administrator() {
         courses = new ArrayList<Course>();
@@ -17,7 +17,7 @@ public class Administrator {
         students = new ArrayList<Student>();
     }
     
-    public void addCourse(Course course) {
+    public static void addCourse(Course course) {
         // Check if course with same name already exists
         for (Course c : courses) {
             if (c.getName().equals(course.getName())) {
@@ -27,7 +27,7 @@ public class Administrator {
         courses.add(course);
     }
     
-    public Course getCourseByName(String name) {
+    public static Course getCourseByName(String name) {
         for (Course course : courses) {
             if (course.getName().equals(name)) {
                 return course;
@@ -38,7 +38,7 @@ public class Administrator {
    
     
     //getter and setter
-    public List<Course> getCourses() {
+    public static List<Course> getCourses() {
 		return courses;
 	}
 
@@ -46,7 +46,7 @@ public class Administrator {
 		this.courses = courses;
 	}
 
-	public List<Batch> getBatches() {
+	public static List<Batch> getBatches() {
 		return batches;
 	}
 
@@ -54,7 +54,7 @@ public class Administrator {
 		this.batches = batches;
 	}
 
-	public List<Student> getStudents() {
+	public static List<Student> getStudents() {
 		return students;
 	}
 
