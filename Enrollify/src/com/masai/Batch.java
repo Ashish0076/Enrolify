@@ -7,6 +7,7 @@ public class Batch {
 	    private String endDate;
 	    private int availableSeats;
 	    private Course course;
+	    
 	    public Batch(String name, String startDate, String endDate, int availableSeats, Course course) {
 	        this.batchName = name;
 	        this.startDate = startDate;

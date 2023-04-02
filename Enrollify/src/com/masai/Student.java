@@ -1,7 +1,6 @@
 package com.masai;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Student {
     private String firstName;
@@ -22,8 +21,81 @@ public class Student {
         this.registeredCourses = new ArrayList<>();
     }
     
+    public Student() {
+    	
+    }
     
+	public void registerCourse(List<Course> course) {
+    	this.registeredCourses =   course;
+    }
+    
+    public void updatePersonalDetails(String fieldName, String newValue) {
+        switch (fieldName) {
+            case "firstName":
+                this.firstName = newValue;
+                System.out.println("First name updated successfully.");
+                break;
+            case "lastName":
+                this.lastName = newValue;
+                System.out.println("Last name updated successfully.");
+                break;
+            case "address":
+                this.address = newValue;
+                System.out.println("Address updated successfully.");
+                break;
+            case "mobileNumber":
+                this.mobileNumber = newValue;
+                System.out.println("Mobile number updated successfully.");
+                break;
+            case "email":
+                this.email = newValue;
+                System.out.println("Email updated successfully.");
+                break;
+            default:
+                System.out.println("Invalid field name. Please try again.");
+                break;
+        }
+    }
 
+
+	public void updatePersonalDetails(String firstName, String lastName, String address, String mobileNumber) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.mobileNumber = mobileNumber;
+        System.out.println("Personal details updated successfully!");
+    }
+
+    public void changePassword(String oldPassword, String newPassword) {
+        if (this.password.equals(oldPassword)) {
+            this.password = newPassword;
+            System.out.println("Password changed successfully!");
+        } else {
+            System.out.println("Old password is incorrect!");
+        }
+    }
+
+    public void viewAvailableCourses(List<Course> courses) {
+        System.out.println("List of available courses:");
+        for (Course course : courses) {
+            System.out.println(course.getName());
+        }
+    }
+    
+    public void viewCourseBatches(List<Course> courses) {
+        System.out.println("Available Batches:");
+        for (Course course : courses) {
+            System.out.println(course.getName() + ":");
+            //List<Batch> batches = course.getBatches();
+           // for (Batch batch : batches) {
+               // System.out.println("Batch " + batch);
+            //}
+        }
+    }
+    
+    
+    
+    //getter and setter
     public String getFirstName() {
 		return firstName;
 	}
@@ -108,40 +180,9 @@ public class Student {
 
 
 
-	public void updatePersonalDetails(String firstName, String lastName, String address, String mobileNumber) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.mobileNumber = mobileNumber;
-        System.out.println("Personal details updated successfully!");
-    }
 
-    public void changePassword(String oldPassword, String newPassword) {
-        if (this.password.equals(oldPassword)) {
-            this.password = newPassword;
-            System.out.println("Password changed successfully!");
-        } else {
-            System.out.println("Old password is incorrect!");
-        }
-    }
+	
 
-    public void viewAvailableCourses(List<Course> courses) {
-        System.out.println("List of available courses:");
-        for (Course course : courses) {
-            System.out.println(course.getName());
-        }
-    }
-    
-    public void viewCourseBatches(List<Course> courses) {
-        System.out.println("Available Batches:");
-        for (Course course : courses) {
-            System.out.println(course.getName() + ":");
-            //List<Batch> batches = course.getBatches();
-           // for (Batch batch : batches) {
-               // System.out.println("Batch " + batch);
-            //}
-        }
-    }
 
 
 }
