@@ -1,4 +1,4 @@
-# **Automated Student Registration System (Enrolify)** <img src="https://user-images.githubusercontent.com/115460698/229439574-02d77960-800a-411c-975d-f05e48c6aefe.png" width="50" height="50">
+# **Enrolify (Automated Student Registration System)** <img src="https://user-images.githubusercontent.com/115460698/229439574-02d77960-800a-411c-975d-f05e48c6aefe.png" width="50" height="50">
 
 This is a software application that automates the student registration process in an educational institute. It helps to create batches under a course, register students, and efficiently allocate them to a batch.
 
