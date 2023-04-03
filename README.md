@@ -29,6 +29,9 @@ In an Educational Institute, every year technology training is conducted during 
 
 1.  Students can sign-up. At the time of sign up first name, last name, address, mobile number, email, and password should be taken.
 2.  Sign in with an email and password
+
+
+
 3.  Can update personal details
 4.  Can change the password. An old password has to be entered for changing the password
 5.  Can see all the available course list
@@ -41,3 +44,8 @@ In an Educational Institute, every year technology training is conducted during 
 2. One course can have many batches but a batch can belong to a single course.
 3. A student can be enrolled in any number of courses and a course can have any number of students.
 4. Kindly throw the appropriate exception for any invalid data entry like duplicate email, incorrect course name, batch name, etc.
+
+
+
+![Screenshot (14)](https://user-images.githubusercontent.com/115460698/229425050-f851ed51-2e1f-4465-87d9-1e3186da061d.png)
+![Screenshot (15)](https://user-images.githubusercontent.com/115460698/229425068-497ea979-afc5-4211-ba0b-4b6eb4d53d69.png)
