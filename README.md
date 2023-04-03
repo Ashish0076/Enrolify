@@ -1,4 +1,5 @@
-# **Automated Student Registration System**
+# **Automated Student Registration System (Enrolify)** <img src="https://user-images.githubusercontent.com/115460698/229439574-02d77960-800a-411c-975d-f05e48c6aefe.png" width="50" height="50">
+
 This is a software application that automates the student registration process in an educational institute. It helps to create batches under a course, register students, and efficiently allocate them to a batch.
 
 ### **Problem Description:**
@@ -40,10 +41,11 @@ In an Educational Institute, every year technology training is conducted during 
 
 ### Note:
 
-1. You are free to add any number of fields in every class as per the requirement & additional features.
-2. One course can have many batches but a batch can belong to a single course.
-3. A student can be enrolled in any number of courses and a course can have any number of students.
-4. Kindly throw the appropriate exception for any invalid data entry like duplicate email, incorrect course name, batch name, etc.
+1. Admin Username: "admin" | Admin Password: "admin"
+2. You are free to add any number of fields in every class as per the requirement & additional features.
+3. One course can have many batches but a batch can belong to a single course.
+4. A student can be enrolled in any number of courses and a course can have any number of students.
+5. Kindly throw the appropriate exception for any invalid data entry like duplicate email, incorrect course name, batch name, etc.
 
 
 
